@@ -1,6 +1,6 @@
 #pragma once
 
-#include <stdint.h>
+#include <limits.h>
 
 #include "data-structure.h"
 
@@ -52,7 +52,7 @@ TEST(dijkstra, simple_test)
 {
     int n = 4;
     vector<vector<int>> paths = {{1, 0, 1}, {1, 2, 1}, {2, 3, 1}};
-    Graph graph(n + 1, vector<int>(n + 1, -1));
+    Graph graph(n, vector<int>(n, -1));
     for (vector<int>& path : paths)
     {
         graph[path[0]][path[1]] = path[2];
