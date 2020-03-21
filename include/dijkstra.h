@@ -2,6 +2,9 @@
 
 #include "data-structure.h"
 
+namespace dijkstra
+{
+
 using Graph = vector<vector<int>>;
 using ipair = pair<int, int>;
 
@@ -43,7 +46,7 @@ int dijkstra(Graph& graph, int source)
     return 0;
 }
 
-TEST(dijkstra_test, simple_test)
+TEST(dijkstra, simple_test)
 {
     int n = 4;
     vector<vector<int>> paths = {{1, 0, 1}, {1, 2, 1}, {2, 3, 1}};
@@ -57,3 +60,5 @@ TEST(dijkstra_test, simple_test)
     EXPECT_EQ(0, re);
     EXPECT_EQ(2, graph[3][3]);
 }
+
+} // namespace dijkstra

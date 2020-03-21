@@ -1,6 +1,7 @@
 ﻿#include "gtest/gtest.h"
 
 #include "binary-search.h"
+#include "dijkstra.h"
 
 int main(int argc, char* argv[])
 {

@@ -9,3 +9,4 @@ BinPackParameters: false
 BreakBeforeBraces: Allman
 ### you may add more rules to fit your own taste
 PointerBindsToType: true
+NamespaceIndentation: Inner
