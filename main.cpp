@@ -3,6 +3,7 @@
 #include "binary-search.h"
 #include "dijkstra.h"
 #include "stream-median.h"
+#include "number-of-islands.h"
 
 int main(int argc, char* argv[])
 {
