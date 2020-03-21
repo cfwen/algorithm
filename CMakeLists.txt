@@ -26,6 +26,8 @@ mark_as_advanced(
     gtest_disable_pthreads gtest_force_shared_crt gtest_hide_internal_symbols
 )
 
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+
 set_target_properties(gtest PROPERTIES FOLDER external)
 set_target_properties(gtest_main PROPERTIES FOLDER external)
 set_target_properties(gmock PROPERTIES FOLDER external)
@@ -37,3 +39,9 @@ file(GLOB headers include/*.h)
 
 add_executable(algorithm ${headers} main.cpp)
 target_link_libraries(algorithm gtest gmock gtest_main)
+
+add_custom_target(run
+    COMMAND algorithm
+    DEPENDS algorithm
+    WORKING_DIRECTORY ${CMAKE_PROJECT_DIR}
+)
