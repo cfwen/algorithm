@@ -2,6 +2,7 @@
 
 #include "binary-search.h"
 #include "dijkstra.h"
+#include "stream-median.h"
 
 int main(int argc, char* argv[])
 {
