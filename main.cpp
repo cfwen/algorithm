@@ -6,6 +6,7 @@
 #include "number-of-islands.h"
 #include "min-distance-of-two-strings.h"
 #include "split-array.h"
+#include "min-score-triangulation.h"
 
 int main(int argc, char* argv[])
 {
