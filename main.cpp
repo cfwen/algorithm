@@ -5,6 +5,7 @@
 #include "stream-median.h"
 #include "number-of-islands.h"
 #include "min-distance-of-two-strings.h"
+#include "split-array.h"
 
 int main(int argc, char* argv[])
 {
