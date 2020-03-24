@@ -27,13 +27,11 @@ int check_record(int n)
         dp[i] = np;                 // append P
         dp[i] += (np + M - l2) % M; // append L
         dp[i] %= M;
-        dl1[i] = (np + M - l1 - l2) % M;
-        if (dl1[i] < 0)
-            dl1[i] = (M + dl1[i]) % M;
+        dl1[i] = (np + M - l1 + M - l2) % M;
         dl2[i] = dl1[i - 1]; // append L on records with ending L
         // cout << dp[i] << " " << dl1[i] << " " << dl2[i] << "\n";
     }
-    // insert A and any position
+    // insert A at any position
     long long sum = dp[n];
     for (int i = 1; i <= n; i++)
     {
