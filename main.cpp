@@ -8,6 +8,7 @@
 #include "split-array.h"
 #include "min-score-triangulation.h"
 #include "student-attendance-record.h"
+#include "the-maze.h"
 
 int main(int argc, char* argv[])
 {
