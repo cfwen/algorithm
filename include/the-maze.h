@@ -48,7 +48,8 @@ int shortest_distance(vector<vector<int>>& maze, vector<int>& start, vector<int>
             int tk = ci(row, col);
             if (cell_index.find(tk) == cell_index.end())
             {
-                cell_index[tk] = cell_index.size() - 1;
+                int k = cell_index.size();
+                cell_index[tk] = k;
                 adj.push_back(vector<pair<int, int>>{});
             }
             int ti = cell_index[tk];
@@ -69,7 +70,8 @@ int shortest_distance(vector<vector<int>>& maze, vector<int>& start, vector<int>
             int tk = ci(row, col);
             if (cell_index.find(tk) == cell_index.end())
             {
-                cell_index[tk] = cell_index.size() - 1;
+                int k = cell_index.size();
+                cell_index[tk] = k;
                 adj.push_back(vector<pair<int, int>>{});
             }
             int ti = cell_index[tk];
@@ -90,7 +92,8 @@ int shortest_distance(vector<vector<int>>& maze, vector<int>& start, vector<int>
             int tk = ci(row, col);
             if (cell_index.find(tk) == cell_index.end())
             {
-                cell_index[tk] = cell_index.size() - 1;
+                int k = cell_index.size();
+                cell_index[tk] = k;
                 adj.push_back(vector<pair<int, int>>{});
             }
             int ti = cell_index[tk];
@@ -111,7 +114,8 @@ int shortest_distance(vector<vector<int>>& maze, vector<int>& start, vector<int>
             int tk = ci(row, col);
             if (cell_index.find(tk) == cell_index.end())
             {
-                cell_index[tk] = cell_index.size() - 1;
+                int k = cell_index.size();
+                cell_index[tk] = k;
                 adj.push_back(vector<pair<int, int>>{});
             }
             int ti = cell_index[tk];
