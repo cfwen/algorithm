@@ -10,6 +10,7 @@
 #include "student-attendance-record.h"
 #include "the-maze.h"
 #include "edit-distance.h"
+#include "sliding-window-maximum.h"
 
 int main(int argc, char* argv[])
 {
