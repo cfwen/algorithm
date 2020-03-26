@@ -11,6 +11,7 @@
 #include "the-maze.h"
 #include "edit-distance.h"
 #include "sliding-window-maximum.h"
+#include "min-cost-to-make-valid-path.h"
 
 int main(int argc, char* argv[])
 {
