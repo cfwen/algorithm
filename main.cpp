@@ -12,6 +12,7 @@
 #include "edit-distance.h"
 #include "sliding-window-maximum.h"
 #include "min-cost-to-make-valid-path.h"
+#include "connecting-cities-with-minimum-cost.h"
 
 int main(int argc, char* argv[])
 {
