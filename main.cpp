@@ -1,6 +1,7 @@
 ﻿#include "gtest/gtest.h"
 
 #include "binary-search.h"
+#include "binary-indexed-tree.h"
 #include "dijkstra.h"
 #include "stream-median.h"
 #include "number-of-islands.h"
