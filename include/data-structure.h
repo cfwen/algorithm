@@ -1,7 +1,7 @@
-
 #pragma once
 
 #include <algorithm>
+#include <array>
 #include <cmath>
 #include <iostream>
 #include <map>
@@ -49,7 +49,7 @@ class TrieNode
   public:
     bool end;
     TrieNode* next[26];
-    // Initialize
+
     TrieNode()
     {
         fill(next, next + 26, nullptr);
